@@ -1,6 +1,6 @@
 resource "aws_key_pair" "terra-key" {
   key_name = "aesthisia-key"
-  public_key = file("terra-key.pub")
+  public_key = file("modules/ec2/terra-key.pub")
 }
 
 resource "aws_instance" "aesthisia-ec2" {
