@@ -1,3 +1,4 @@
-module "my ec2" {
+module "my-ec2" {
   source = "../modules/ec2"
+
 }
