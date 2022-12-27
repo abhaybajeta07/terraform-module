@@ -13,3 +13,10 @@ variable AMI {
   description = "ami for instance"
 
 }
+
+variable "subnet_id" {
+
+}
+variable "sec_group" {
+
+}

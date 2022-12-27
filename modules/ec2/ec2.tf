@@ -8,7 +8,8 @@ resource "aws_instance" "aesthisia-ec2" {
   instance_type = "t2.micro"
   availability_zone = var.ZONE1
   key_name = aws_key_pair.terra-key.key_name
-  vpc_security_group_ids = ["sg-0e990b735b6ca3015"]
+  subnet_id = var.subnet_id
+  vpc_security_group_ids = [var.sec_group]
   tags = {
     Name= "Aesthesia-Instance"
   }
