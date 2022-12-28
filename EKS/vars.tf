@@ -19,25 +19,25 @@ variable "vpc_cidr" {
 }
 
 variable "PubSub1CIDR" {
-  default = "198.168.0.0/24"
+  default = "198.168.1.0/24"
 }
 
 variable "PubSub2CIDR" {
-  default = "198.168.0.0/24"
+  default = "198.168.2.0/24"
 }
 
 variable "PubSub3CIDR" {
-  default = "198.168.0.0/24"
+  default = "198.168.3.0/24"
 }
 
 variable "PrivSub1CIDR" {
-  default = "198.168.0.0/24"
+  default = "198.168.4.0/24"
 }
 
 variable "PrivSub2CIDR" {
-  default = "198.168.0.0/24"
+  default = "198.168.5.0/24"
 }
 
 variable "PrivSub3CIDR" {
-  default = "198.168.0.0/24"
+  default = "198.168.6.0/24"
 }
