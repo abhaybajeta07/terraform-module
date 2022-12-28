@@ -3,7 +3,7 @@ variable "vpc_cidr" {
 }
 
 variable "tenancy" {
-  default = "dedicated"
+  default = "default"
 }
 
 variable "vpc_id" {
