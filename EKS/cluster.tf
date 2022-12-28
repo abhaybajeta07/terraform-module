@@ -45,7 +45,7 @@ resource "aws_iam_role_policy_attachment" "AmazonEKSVPCResourceController" {
 }
 
 data "tls_certificate" "eks-tls" {
-  url = aws_eks_cluster.aesthisia-cluster.identity[0].oidc[0]
+  url = aws_eks_cluster.aesthisia-cluster.identity[0].oidc[0].issuer
 }
 
 resource "aws_iam_openid_connect_provider" "eks-openidconnect" {
